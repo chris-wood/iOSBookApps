@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Ch2-RandomPossessions' target in the 'Ch2-RandomPossessions' project
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+#endif
