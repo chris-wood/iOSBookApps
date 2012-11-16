@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>QuizApplication.xcscheme</key>
+		<key>Ch1-QuizApplication.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>5A18DA5F16567B8E00BA64E6</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5A18DA8916567B8F00BA64E6</key>
+		<key>5AC4A7A516567CC7001C7395</key>
 		<dict>
 			<key>primary</key>
 			<true/>

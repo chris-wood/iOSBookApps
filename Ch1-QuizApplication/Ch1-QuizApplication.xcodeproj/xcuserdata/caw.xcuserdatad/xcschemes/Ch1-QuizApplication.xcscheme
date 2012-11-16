@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5A18DA5F16567B8E00BA64E6"
-               BuildableName = "QuizApplication.app"
-               BlueprintName = "QuizApplication"
-               ReferencedContainer = "container:QuizApplication.xcodeproj">
+               BlueprintIdentifier = "5AC4A7A516567CC7001C7395"
+               BuildableName = "Ch1-QuizApplication.app"
+               BlueprintName = "Ch1-QuizApplication"
+               ReferencedContainer = "container:Ch1-QuizApplication.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,24 +28,14 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5A18DA8916567B8F00BA64E6"
-               BuildableName = "QuizApplicationTests.octest"
-               BlueprintName = "QuizApplicationTests"
-               ReferencedContainer = "container:QuizApplication.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5A18DA5F16567B8E00BA64E6"
-            BuildableName = "QuizApplication.app"
-            BlueprintName = "QuizApplication"
-            ReferencedContainer = "container:QuizApplication.xcodeproj">
+            BlueprintIdentifier = "5AC4A7A516567CC7001C7395"
+            BuildableName = "Ch1-QuizApplication.app"
+            BlueprintName = "Ch1-QuizApplication"
+            ReferencedContainer = "container:Ch1-QuizApplication.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -61,10 +51,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5A18DA5F16567B8E00BA64E6"
-            BuildableName = "QuizApplication.app"
-            BlueprintName = "QuizApplication"
-            ReferencedContainer = "container:QuizApplication.xcodeproj">
+            BlueprintIdentifier = "5AC4A7A516567CC7001C7395"
+            BuildableName = "Ch1-QuizApplication.app"
+            BlueprintName = "Ch1-QuizApplication"
+            ReferencedContainer = "container:Ch1-QuizApplication.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -79,10 +69,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5A18DA5F16567B8E00BA64E6"
-            BuildableName = "QuizApplication.app"
-            BlueprintName = "QuizApplication"
-            ReferencedContainer = "container:QuizApplication.xcodeproj">
+            BlueprintIdentifier = "5AC4A7A516567CC7001C7395"
+            BuildableName = "Ch1-QuizApplication.app"
+            BlueprintName = "Ch1-QuizApplication"
+            ReferencedContainer = "container:Ch1-QuizApplication.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
