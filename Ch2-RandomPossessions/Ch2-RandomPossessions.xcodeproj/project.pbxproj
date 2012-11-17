@@ -11,6 +11,7 @@
 		5AC4A7E01656892C001C7395 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC4A7DF1656892C001C7395 /* main.m */; };
 		5AC4A7E41656892C001C7395 /* Ch2_RandomPossessions.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5AC4A7E31656892C001C7395 /* Ch2_RandomPossessions.1 */; };
 		5AC4A7EC16568DEE001C7395 /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC4A7EB16568DEE001C7395 /* BNRItem.m */; };
+		5AC4A7F31656D118001C7395 /* BNRContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC4A7F21656D118001C7395 /* BNRContainer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		5AC4A7E31656892C001C7395 /* Ch2_RandomPossessions.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Ch2_RandomPossessions.1; sourceTree = "<group>"; };
 		5AC4A7EA16568DEE001C7395 /* BNRItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItem.h; sourceTree = "<group>"; };
 		5AC4A7EB16568DEE001C7395 /* BNRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItem.m; sourceTree = "<group>"; };
+		5AC4A7F11656D118001C7395 /* BNRContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BNRContainer.h; path = ../BNRContainer.h; sourceTree = "<group>"; };
+		5AC4A7F21656D118001C7395 /* BNRContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BNRContainer.m; path = ../BNRContainer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +79,8 @@
 		5AC4A7DE1656892C001C7395 /* Ch2-RandomPossessions */ = {
 			isa = PBXGroup;
 			children = (
+				5AC4A7F11656D118001C7395 /* BNRContainer.h */,
+				5AC4A7F21656D118001C7395 /* BNRContainer.m */,
 				5AC4A7DF1656892C001C7395 /* main.m */,
 				5AC4A7EA16568DEE001C7395 /* BNRItem.h */,
 				5AC4A7EB16568DEE001C7395 /* BNRItem.m */,
@@ -146,6 +151,7 @@
 			files = (
 				5AC4A7E01656892C001C7395 /* main.m in Sources */,
 				5AC4A7EC16568DEE001C7395 /* BNRItem.m in Sources */,
+				5AC4A7F31656D118001C7395 /* BNRContainer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +248,7 @@
 				5AC4A7E91656892C001C7395 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

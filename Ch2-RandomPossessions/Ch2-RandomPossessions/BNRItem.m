@@ -42,6 +42,11 @@
 	BNRItem *newItem = [[self alloc] initWithItemName:randomName valueInDollars:randomValue serialNumber:randomSerialNumber]; return newItem;
 }
 
+- (void)dealloc
+{
+	NSLog(@"Deallocating %@", self);
+}
+
 - (id)init
 {
 	return [self initWithItemName:@"Item" valueInDollars:0 serialNumber:@""];
@@ -54,12 +59,44 @@
 	self = [super init];
 	if (self) // make sure the parent's init method succeeded...
 	{
-		item = name;
+		itemName = name;
 		valueInDollars = value;
 		serialNumber = number;
 		dateCreated = [[NSDate alloc] init];
 	}
 	return self;
+}
+
+// Define the accessors for each of the properties declard in the interface
+@synthesize itemName;
+@synthesize valueInDollars;
+@synthesize serialNumber;
+@synthesize dateCreated;
+@synthesize container;
+@synthesize contained;
+
+// we must override the setContained method because we need the extra logic...
+// it automatically overrides the result of the synthesis
+- (void)setContained:(BNRItem*)i
+{
+	contained = i;
+	[i setContainer:self];
+}
+
+/*
+- (BNRItem*)container
+{
+	return container;
+}
+
+- (BNRItem*)contained
+{
+	return contained;
+}
+
+- (void)setContainer:(BNRItem*)i
+{
+	container = i;
 }
 
 - (NSString*)itemName
@@ -96,11 +133,12 @@
 {
 	return dateCreated;
 }
+*/
 
 - (NSString*)description
 {
 	NSString *result = [[NSString alloc] initWithFormat:@"%@ (%@): Worth $%d, recorded on %@",
-					   item,
+					   itemName,
 					   serialNumber,
 					   valueInDollars,
 					   dateCreated];
