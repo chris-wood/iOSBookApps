@@ -98,11 +98,12 @@
 	 didUpdateLocations:(NSArray *)locations { // array of (at least one) locations (last entry is the most recent)
 	NSLog(@"%@", [locations objectAtIndex:[locations count] - 1]);
 	
-	NSTimeInterval t = [[locations objectAtIndex:[locations count] - 1] timeIntervalSinceNow];
+	CLLocation *newLoc =[locations objectAtIndex:[locations count] - 1];
+	NSTimeInterval t = [[newLoc timestamp] timeIntervalSinceNow];
 	if (t < -180) {
 		return;
 	} else {
-		[self foundLocation:[locations objectAtIndex:[locations count] - 1]];
+		[self foundLocation:newLoc];
 	}
 }
 
