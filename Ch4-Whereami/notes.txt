@@ -1,0 +1,5 @@
+Create UI elements (Whereami)
+1. Add instance variables as outlets to the owning controller
+2. Add view objects to the view
+3. Set the objects delegates to the owning controller (or another controller if needed)
+4. Set the instance variables in the controller to point to the objects in the view
