@@ -15,13 +15,50 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 	
+	[[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
+	
 	// Override point for customization after application launch.
+	
+	CGRect screenRect = [[self window] bounds];
+	UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:screenRect];
+	[[self window] addSubview:scrollView];
+	
+	CGRect bigRect = screenRect; // struct deep copy
+//	bigRect.size.width *= 2.0;
+//	bigRect.size.height *= 2.0;
+	view = [[HypnosisView alloc] initWithFrame:screenRect];
+	
+//	screenRect.origin.x = screenRect.size.width; // stack the two rectangles side-by-side
+//	HypnosisView *anotherView = [[ HypnosisView alloc] initWithFrame:screenRect];
+//	[scrollView addSubview:anotherView];
+	
+	[scrollView setMinimumZoomScale:1.0];
+	[scrollView setMaximumZoomScale:5.0];
+	[scrollView setDelegate:self]; // ignore the warning...
+	
+	// snap to view boundaries
+	[scrollView setPagingEnabled:YES];
+	
+	[scrollView addSubview:view];
+	[scrollView setContentSize:bigRect.size]; // set the entire scrollable view part equal to the size of the big rectangle
+	
+	
 	
 	// Add our new view to the window to make it visible
 //	CGRect viewFrame = CGRectMake(0, 0, , 150);
-	HypnosisView *view = [[HypnosisView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//	HypnosisView *view = [[HypnosisView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 //	[view setBackgroundColor:[UIColor redColor]];
-	[[self window] addSubview:view];
+//	[[self window] addSubview:view];
+	
+	BOOL success = [view becomeFirstResponder];
+	if (success)
+	{
+		NSLog(@"HypnosisView became the first responder.");
+	}
+	else
+	{
+		NSLog(@"Could not become the first responder.");
+	}
 	
 //	CGRect anotherFrame = CGRectMake(20, 30, 50, 50);
 //	HypnosisView *viewTwo = [[HypnosisView alloc] initWithFrame:anotherFrame];
@@ -33,6 +70,11 @@
     [self.window makeKeyAndVisible];
 	
     return YES;
+}
+
+- (UIView*)viewForZoomingInScrollView:(UIScrollView *)scrollView
+{
+	return view;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

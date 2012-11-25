@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HypnosisView.h"
 
-@interface cawcode_BLAppDelegate : UIResponder <UIApplicationDelegate>
+@interface cawcode_BLAppDelegate : UIResponder <UIApplicationDelegate, UIScrollViewDelegate> // to respond to zoom messages
+{
+	HypnosisView *view;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 

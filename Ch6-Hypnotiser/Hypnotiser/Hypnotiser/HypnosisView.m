@@ -10,11 +10,14 @@
 
 @implementation HypnosisView
 
+@synthesize circleColor;
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
         [self setBackgroundColor:[UIColor clearColor]]; // so we don't draw the frame backgrounds!
+		[self setCircleColor:[UIColor lightGrayColor]];
     }
     return self;
 }
@@ -37,7 +40,7 @@
 	
 	// The color of the line should be gray (red/ green/ blue = 0.6, alpha = 1.0);
 	//CGContextSetRGBStrokeColor(ctx, 0.6, 0.6, 0.6, 1.0);
-	[[UIColor colorWithRed:0.6 green:0.6 blue:0.6 alpha:1] setStroke]; // UIColor has a number of predefined colors that you can play around with!
+	[[self circleColor] setStroke]; // UIColor has a number of predefined colors that you can play around with!
 	
 	for (float currentRad = maxRad; currentRad > 0; currentRad -= 20)
 	{
@@ -72,6 +75,28 @@
 	
 	// Perform a drawing instruction (we build up new shapes in the context and then tell to draw them...)
 	CGContextStrokePath(ctx);
+}
+
+// This says that we can now respond to events that happen on the interface (shake, touch, etc)
+- (BOOL)canBecomeFirstResponder
+{
+	return YES;
+}
+
+// Respond to shake event
+- (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+	if (motion == UIEventSubtypeMotionShake)
+	{
+		NSLog(@"Motion started!");
+		[self setCircleColor:[UIColor redColor]]; // only switches once...
+	}
+}
+
+- (void)setCircleColor:(UIColor *)clr
+{
+	circleColor = clr;
+	[self setNeedsDisplay]; // force the view to be re-drawn
 }
 
 @end
