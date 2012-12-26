@@ -20,6 +20,10 @@
 		5A7634A0168A7F62004F0597 /* HypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A76349F168A7F62004F0597 /* HypnosisView.m */; };
 		5A7634A3168A98BA004F0597 /* TimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7634A2168A98BA004F0597 /* TimeViewController.m */; };
 		5A7634A5168A992E004F0597 /* TimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A7634A4168A992E004F0597 /* TimeViewController.xib */; };
+		5A949C34168B877F00035278 /* Hypno.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A949C30168B877F00035278 /* Hypno.png */; };
+		5A949C35168B877F00035278 /* Hypno@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A949C31168B877F00035278 /* Hypno@2x.png */; };
+		5A949C36168B877F00035278 /* Time.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A949C32168B877F00035278 /* Time.png */; };
+		5A949C37168B877F00035278 /* Time@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A949C33168B877F00035278 /* Time@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +47,10 @@
 		5A7634A1168A98BA004F0597 /* TimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeViewController.h; sourceTree = "<group>"; };
 		5A7634A2168A98BA004F0597 /* TimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeViewController.m; sourceTree = "<group>"; };
 		5A7634A4168A992E004F0597 /* TimeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeViewController.xib; sourceTree = "<group>"; };
+		5A949C30168B877F00035278 /* Hypno.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hypno.png; sourceTree = "<group>"; };
+		5A949C31168B877F00035278 /* Hypno@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hypno@2x.png"; sourceTree = "<group>"; };
+		5A949C32168B877F00035278 /* Time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Time.png; sourceTree = "<group>"; };
+		5A949C33168B877F00035278 /* Time@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Time@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,10 @@
 		5A76346F168A7E0C004F0597 = {
 			isa = PBXGroup;
 			children = (
+				5A949C30168B877F00035278 /* Hypno.png */,
+				5A949C31168B877F00035278 /* Hypno@2x.png */,
+				5A949C32168B877F00035278 /* Time.png */,
+				5A949C33168B877F00035278 /* Time@2x.png */,
 				5A763484168A7E0C004F0597 /* HypnoTime */,
 				5A76347D168A7E0C004F0597 /* Frameworks */,
 				5A76347B168A7E0C004F0597 /* Products */,
@@ -174,6 +186,10 @@
 				5A763493168A7E0C004F0597 /* Default@2x.png in Resources */,
 				5A763495168A7E0C004F0597 /* Default-568h@2x.png in Resources */,
 				5A7634A5168A992E004F0597 /* TimeViewController.xib in Resources */,
+				5A949C34168B877F00035278 /* Hypno.png in Resources */,
+				5A949C35168B877F00035278 /* Hypno@2x.png in Resources */,
+				5A949C36168B877F00035278 /* Time.png in Resources */,
+				5A949C37168B877F00035278 /* Time@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +313,7 @@
 				5A76349A168A7E0C004F0597 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
